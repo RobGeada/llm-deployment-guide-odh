@@ -1,7 +1,7 @@
 # ROSA LLM Deployment Notes
 
 ## Instructions to get GPU
-
+Copied from Lucas' notes [here.](https://docs.google.com/document/d/1T2oc-KZRMboUVuUSGDZnt3VRZ5s885aDRJGYGMkn_Wo/edit?usp=sharing)
 ### Get a GPU Worker Node
 1) Go to the Openshift cluster console
 2) Under <your-cluster> -> Machine pools, click “Add machine pool”
