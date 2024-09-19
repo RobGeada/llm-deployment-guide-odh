@@ -1,4 +1,4 @@
-# ROSA LLM Deployment Notes
+# OD HLLM Deployment Notes
 
 ## Prereqs
 1) ODH is installed on your cluster and a DSC is deployed
