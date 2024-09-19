@@ -1,5 +1,8 @@
 # ROSA LLM Deployment Notes
 
+## Prereqs
+1) ODH is installed on your cluster and a DSC is deployed
+
 ## Instructions to get GPU
 Copied from Lucas' notes [here.](https://docs.google.com/document/d/1T2oc-KZRMboUVuUSGDZnt3VRZ5s885aDRJGYGMkn_Wo/edit?usp=sharing)
 ### Get a GPU Worker Node
@@ -18,9 +21,9 @@ Copied from Lucas' notes [here.](https://docs.google.com/document/d/1T2oc-KZRMbo
       1) Create GPU ClusterPolicy CR. This will create several pods in the nvidia GPU namespace, they can take a while to come up because they compile the driver. Once they are up, scheduler should have allocatable GPUs
 
 ### Accelerator migration
-If you already have RHOAI already deployed, you need to force the migration:
+If you already have RHOAI/ODH already deployed, you need to force the migration:
 
-1) Go to the `redhat-ods-applications` namespace
+1) Go to the `redhat-ods-applications`/`opendatahub` namespace
 2) Go to the Configmaps 
 3) Delete the one called `migration-gpu-status` 
 4) Now go to Deployments 
