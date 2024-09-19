@@ -1,4 +1,4 @@
-# OD HLLM Deployment Notes
+# ODH LLM Deployment Notes
 
 ## Prereqs
 1) ODH is installed on your cluster and a DSC is deployed
